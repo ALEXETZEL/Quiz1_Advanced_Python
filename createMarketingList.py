@@ -50,11 +50,11 @@ for x in csvfile:
 # print the dictionary after the loop is finished
 print(customer)
 # iternate through the dictionary and write to the output file
-outfile.write('Name' + ', '+'Email'+', '+'Phone'+'\n')
+outfile.write('Name' + ','+'Email'+','+'Phone'+'\n')
 for x in customer:
     email=customer[x]['email']
     phone=customer[x]['phone']
-    outfile.write(x+', '+email+ ', '+phone+'\n')
+    outfile.write(x+','+email+','+phone+'\n')
 
 # close your output file
 outfile.close()
